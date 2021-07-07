@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+
+    font-family: $fuente;
+    background-color: $colorFondo;
+}
+main {
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px
+      300px
+      100px
+      200px;
+    grid-template-areas: 
+      "my-header my-header my-header"
+      "my-section my-section my-section"
+      "my-section my-section my-section"
+      "my-footer my-footer my-footer"
+}
+header {
+    grid-area: my-header;
+    .cabecera{
+        padding: 20px;
+    }
+    .navbar-brand{
+        padding: 2rem;    
+    }    
+    .bg-menu{
+        background-color:$colorMenu;
+    }
+    .letraMenu{            
+            font-weight: $letraMenu;
+            font-size: 16px;
+            color:$colorLetraMenu;        
+    }
+    .navbar-dark {
+        .navbar-brand{
+            color:$colorLetraMenu;
+            font-size: 22px;
+            margin-top: 25px;
+            margin-left: 30px;           
+        }
+    }    
+    a{
+        :hover{
+            color:$colorLetraResaltada;
+        }
+    }   
+}
+section {
+    grid-area: my-section;
+    background-color:$colorFondo;
+    .colizq {
+        float: left;
+        padding: 15px;
+        img{
+            padding: 45px;
+        }
+      }
+    .colder {
+        padding: 10px;
+        margin: 0;
+        p{
+            font-size: 18px;
+            margin-top: 110px;
+            line-height: 3em;
+            span{
+                font-weight: 600;
+                font-size: 18px;
+                color: $colorLetraResaltada;
+            }
+        }
+    }
+}
+footer {
+    grid-area: my-footer;
+    .footer{
+        padding: 20px;
+        display: block;
+        clear: both;
+        height: 4rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        
+        .container{            
+            background-color:$colorMenu;
+        }
+        .container-fluid{
+            /*margin: 20px;*/
+            background-color:$colorMenu;
+            height: 60px;
+            padding-top: 10px;
+            .row{    
+                .img{
+                    width: 36px;
+                    height: 36px;
+                }
+                a{
+                    text-align: center;
+                    color:$colorLetraResaltada
+                }
+            }                
+        }
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    main {
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-rows: 150px
+        1fr
+        100px;
+      grid-template-areas: 
+        "my-header my-header my-header"
+        "my-section my-section my-section"
+        "my-footer my-footer my-footer"
+    }
+}
+  
+@media (min-width: 1001px) {
+    main {
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-rows: 200px
+        1fr
+        100px;
+      grid-template-areas:
+        "my-header my-header my-header"
+        "my-section my-section my-section"
+        "my-footer my-footer my-footer"
+    }
+}
+
+
+
+
+
+
+
+
+
+    

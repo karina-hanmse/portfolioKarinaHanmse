@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'fuentes';
+.colder{
+    .titulo{
+        font-weight: 600;
+        color: $colorLetraResaltada;
+    }
+    hr{
+        color:$colorLetraResaltada;
+        height: 14px;
+        margin-left:50px; 
+
+    }
+    .subtitulo{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .texto{
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .barra{        
+            font-size: 14px;
+            color: $colorLetraResaltada;
+            margin-top: 3px;   
+            margin-left: 145px;     
+    }
+}

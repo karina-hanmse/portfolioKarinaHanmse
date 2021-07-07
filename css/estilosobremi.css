@@ -1,0 +1,32 @@
+/*Colores Paleta*/
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap");
+.colder .titulo {
+  font-weight: 600;
+  color: #fc5404;
+}
+
+.colder hr {
+  color: #fc5404;
+  background-color: #fc5404;
+  height: 2px;
+  margin-left: 50px;
+}
+
+.colder .subtitulo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.colder .texto {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.colder .barra {
+  font-size: 14px;
+  color: #fc5404;
+  margin-top: 3px;
+  margin-left: 145px;
+}
+/*# sourceMappingURL=estilosobremi.css.map */

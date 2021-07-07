@@ -1,0 +1,154 @@
+/*Colores Paleta*/
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #fdfaf6;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 100px 300px 100px 200px;
+      grid-template-rows: 100px 300px 100px 200px;
+      grid-template-areas: "my-header my-header my-header" "my-section my-section my-section" "my-section my-section my-section" "my-footer my-footer my-footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: my-header;
+}
+
+header .cabecera {
+  padding: 20px;
+}
+
+header .navbar-brand {
+  padding: 2rem;
+}
+
+header .bg-menu {
+  background-color: #ffd8cc;
+}
+
+header .letraMenu {
+  font-weight: 600;
+  font-size: 16px;
+  color: #0a1d37;
+}
+
+header .navbar-dark .navbar-brand {
+  color: #0a1d37;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+header a :hover {
+  color: #fc5404;
+}
+
+section {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: my-section;
+  background-color: #fdfaf6;
+}
+
+section .colizq {
+  float: left;
+  padding: 15px;
+}
+
+section .colizq img {
+  padding: 45px;
+}
+
+section .colder {
+  padding: 10px;
+  margin: 0;
+}
+
+section .colder p {
+  font-size: 18px;
+  margin-top: 110px;
+  line-height: 3em;
+}
+
+section .colder p span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fc5404;
+}
+
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: my-footer;
+}
+
+footer .footer {
+  padding: 20px;
+  display: block;
+  clear: both;
+  height: 4rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .footer .container {
+  background-color: #ffd8cc;
+}
+
+footer .footer .container-fluid {
+  /*margin: 20px;*/
+  background-color: #ffd8cc;
+  height: 60px;
+  padding-top: 10px;
+}
+
+footer .footer .container-fluid .row .img {
+  width: 36px;
+  height: 36px;
+}
+
+footer .footer .container-fluid .row a {
+  text-align: center;
+  color: #fc5404;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  main {
+    -ms-grid-columns: 200px 1fr 200px;
+        grid-template-columns: 200px 1fr 200px;
+    -ms-grid-rows: 150px 1fr 100px;
+        grid-template-rows: 150px 1fr 100px;
+        grid-template-areas: "my-header my-header my-header" "my-section my-section my-section" "my-footer my-footer my-footer";
+  }
+}
+
+@media (min-width: 1001px) {
+  main {
+    -ms-grid-columns: 200px 1fr 200px;
+        grid-template-columns: 200px 1fr 200px;
+    -ms-grid-rows: 200px 1fr 100px;
+        grid-template-rows: 200px 1fr 100px;
+        grid-template-areas: "my-header my-header my-header" "my-section my-section my-section" "my-footer my-footer my-footer";
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
