@@ -34,7 +34,7 @@
   transition: 0.3s;
 }
 
-.blog .entry .entry-title a:hover {
+.blog .entry .entry-title a a:hover {
   color: #e43c5c;
 }
 
@@ -57,7 +57,7 @@
   margin-bottom: 15px;
 }
 
-.blog .entry .entry-meta ul li + li {
+.blog .entry .entry-meta ul li li + li {
   padding-left: 15px;
 }
 
@@ -93,7 +93,7 @@
   border-radius: 50px;
 }
 
-.blog .entry .entry-content .read-more a:hover {
+.blog .entry .entry-content .read-more a a:hover {
   background: #d01d3f;
 }
 
@@ -103,7 +103,7 @@
   font-weight: bold;
 }
 
-.blog .entry .entry-content blockquote {
+.blog .entry .eentry-content blockquote {
   overflow: hidden;
   background-color: #fafafa;
   padding: 60px;
@@ -112,7 +112,7 @@
   margin: 20px 0;
 }
 
-.blog .entry .entry-content blockquote p {
+.blog .entry .eentry-content blockquote p {
   color: #444444;
   line-height: 1.6;
   margin-bottom: 0;
@@ -121,7 +121,7 @@
   font-size: 22px;
 }
 
-.blog .entry .entry-content blockquote .quote-left {
+.blog .entry .eentry-content blockquote .quote-left {
   position: absolute;
   left: 20px;
   top: 20px;
@@ -129,7 +129,7 @@
   color: #e7e7e7;
 }
 
-.blog .entry .entry-content blockquote .quote-right {
+.blog .entry .eentry-content blockquote .quote-right {
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -137,7 +137,7 @@
   color: #e7e7e7;
 }
 
-.blog .entry .entry-content blockquote::after {
+.blog .entry blockquote::after {
   content: '';
   position: absolute;
   left: 0;
