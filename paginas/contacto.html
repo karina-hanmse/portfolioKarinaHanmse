@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/estilosproyectos.css">
     <link rel="stylesheet" href="../css/contacto.css">
     <title>Proyectos</title>
 </head>
@@ -45,60 +44,57 @@
       </div><!--Fin cabecera-->
     </header> <!--Fin Header-->
     <body>
-        <section id="contact" class="contact">
-            <div class="container">
-      
-              <div class="section-title">
-                <h2>Contacto</h2>
-              </div>
-      
-              <div class="row mt-5">
-      
-                <div class="col-lg-4">
-      
-                    <div class="email">
-                      <i class="icofont-envelope"></i>
-                      <h4>Email:</h4>
-                      <p>karinahanmse@gmail.com</p>
-                    </div>     
-                </div>      
-                <div class="col-lg-8 mt-5 mt-lg-0">
-                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                    <div class="form-row">
-                      <div class="col-md-6 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Nombre y Apellido" data-rule="minlen:4" data-msg="Por favor ingrese un nombre" />
-                        <div class="validate"></div>
-                      </div>
-                      <div class="col-md-6 form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Por favor ingrese un mail válido" />
-                        <div class="validate"></div>
-                      </div>
+        <section class="container contact">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="contact-info">
+                        <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+                        <h2>Contacto</h2>
+                        <h4>Espero tus preguntas o sugerencias!</h4>
                     </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor ingrese un asunto de consulta" />
-                      <div class="validate"></div>
+                </div>
+                <div class="col-md-9">
+                    <div class="contact-form">
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="fname">Nombre:</label>
+                          <div class="col-sm-10">          
+                            <input type="text" class="form-control" id="fname" placeholder="Nombre" name="fname">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="lname">Apellido:</label>
+                          <div class="col-sm-10">          
+                            <input type="text" class="form-control" id="lname" placeholder="Apellido" name="lname">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="email">Email:</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="comment">Comentario:</label>
+                          <div class="col-sm-10">
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                          </div>
+                        </div>
+                        <div class="form-group">        
+                          <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Enviar</button>
+                          </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor ingrese su consulta" placeholder="Mensaje"></textarea>
-                      <div class="validate"></div>
-                    </div>
-                    <div class="mb-3">
-                      <div class="loading">Enviando</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Su mensaje fue enviado. Gracias!</div>
-                    </div>
-                    <div class="text-center"><button type="submit">Enviar</button></div>
-                  </form>
-                </div>      
+                </div>
             </div>
-        </section><!-- End Contact Section -->
+        </section>
         
         <footer>
             <div class="footer"> <!--Footer-->
                 <div class="container-fluid  text-center align-items-center">  <!--Container-->
                         <div class="row "><!--Row-->
                           <div class="col-4"> <!--Column1-->
-                            © 2021 Todos los Derechos Reservados | <a href="index.html">KarinaHanmse</a>
+                            © 2021 Todos los Derechos Reservados | <a href="../index.html">KarinaHanmse</a>
                           </div><!--Fin Column1-->
                           <div class="col-4"> <!--Column 2-->
                             <img src="../imagenes/KH.png"width="30" height="30">
