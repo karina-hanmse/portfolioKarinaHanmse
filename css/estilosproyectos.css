@@ -25,7 +25,7 @@
   margin: auto 2rem 2rem;
 }
 
-.portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .portfolio-item .caption .caption-content .h2 {
+.portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
@@ -63,11 +63,11 @@
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }
-  .portfolio-item .portfolio-item:hover img {
+  .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
-  .portfolio-item .portfolio-item:hover .caption {
+  .portfolio-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
