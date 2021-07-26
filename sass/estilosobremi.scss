@@ -4,21 +4,24 @@
     .titulo{
         font-weight: 600;
         color: $colorLetraResaltada;
+        margin: 15px;
     }
     hr{
         color:$colorLetraResaltada;
         height: 14px;
-        margin-left:50px; 
+        margin-left:-50px; 
 
     }
     .subtitulo{
         font-size: 18px;
         font-weight: 700;
+        margin: 25px;
     }
     .texto{
         font-size: 16px;
         font-weight: 400;
         margin-top: 10px;
+        padding-left: 15px;
     }
     .barra{        
             font-size: 14px;
