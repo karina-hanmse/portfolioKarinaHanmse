@@ -1,32 +1,45 @@
 @import 'variables';
 @import 'fuentes';
-.colder{
-    .titulo{
+
+.colizq {
+    float: left;
+    padding: 15px;
+
+    img {
+        padding: 45px;
+    }
+}
+
+.colder {
+    .titulo {
         font-weight: 600;
         color: $colorLetraResaltada;
         margin: 15px;
     }
-    hr{
-        color:$colorLetraResaltada;
-        height: 14px;
-        margin-left:-50px; 
+
+    hr {
+        color: $colorLetraResaltada;
+        margin-left: -50px;
 
     }
-    .subtitulo{
+
+    .subtitulo {
         font-size: 18px;
         font-weight: 700;
         margin: 25px;
     }
-    .texto{
+
+    .texto {
         font-size: 16px;
         font-weight: 400;
         margin-top: 10px;
         padding-left: 15px;
     }
-    .barra{        
-            font-size: 14px;
-            color: $colorLetraResaltada;
-            margin-top: 3px;   
-            margin-left: 145px;     
+
+    .barra {
+        font-size: 14px;
+        color: $colorLetraResaltada;
+        margin-top: 3px;
+        margin-left: 145px;
     }
 }

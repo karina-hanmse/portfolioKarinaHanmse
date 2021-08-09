@@ -1,4 +1,6 @@
 /*Colores Paleta*/
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap");
+
 .portfolio-item {
   display: block;
   position: relative;
@@ -20,12 +22,27 @@
   z-index: 1;
 }
 
+.portfolio-item img {
+  width: 300px;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.portfolio-item:hover img {
+  -webkit-clip-path: inset(2rem);
+  clip-path: inset(2rem);
+}
+
 .portfolio-item .caption .caption-content {
   color: #fff;
   margin: auto 2rem 2rem;
 }
 
-.portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
+.portfolio-item .caption .caption-content h2,
+.portfolio-item .caption .caption-content .h2 {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
@@ -40,6 +57,7 @@
     max-width: none;
     margin: 0;
   }
+
   .portfolio-item .caption {
     transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
     -webkit-transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
@@ -48,6 +66,7 @@
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
   }
+
   .portfolio-item .caption .caption-content {
     -webkit-transition: opacity 0.25s;
     transition: opacity 0.25s;
@@ -55,6 +74,7 @@
     margin-right: 5rem;
     margin-bottom: 5rem;
   }
+
   .portfolio-item img {
     transition: -webkit-clip-path 0.25s ease-out;
     -webkit-transition: -webkit-clip-path 0.25s ease-out;
@@ -63,14 +83,17 @@
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }
+
   .portfolio-item:hover img {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+
   .portfolio-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
 }
+
 /*# sourceMappingURL=estilosproyectos.css.map */

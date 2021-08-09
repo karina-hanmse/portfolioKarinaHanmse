@@ -1,5 +1,14 @@
 /*Colores Paleta*/
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap");
+.colizq {
+  float: left;
+  padding: 15px;
+}
+
+.colizq img {
+  padding: 45px;
+}
+
 .colder .titulo {
   font-weight: 600;
   color: #fc5404;
@@ -8,7 +17,6 @@
 
 .colder hr {
   color: #fc5404;
-  height: 14px;
   margin-left: -50px;
 }
 
